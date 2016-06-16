@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/ui">
+        <file alias="szczalka">gfx/strzalka.png</file>
+        <file alias="background">gfx/ui.png</file>
+        <file alias="labels">gfx/labels.png</file>
+    </qresource>
+    <qresource prefix="/people/red">
+        <file alias="f_dead">gfx/ppl/red_f_dead.png</file>
+        <file alias="f">gfx/ppl/red_f_live.png</file>
+        <file alias="m_dead">gfx/ppl/red_m_dead.png</file>
+        <file alias="m">gfx/ppl/red_m_live.png</file>
+    </qresource>
+    <qresource prefix="/people/brown">
+        <file alias="f_dead">gfx/ppl/br_f_dead.png</file>
+        <file alias="f">gfx/ppl/br_f_live.png</file>
+        <file alias="m_dead">gfx/ppl/br_m_dead.png</file>
+        <file alias="m">gfx/ppl/br_m_live.png</file>
+        <file alias="f_boss">gfx/ppl/br_f_boss.png</file>
+    </qresource>
+    <qresource prefix="/people/blonde">
+        <file alias="f_dead">gfx/ppl/bl_f_dead.png</file>
+        <file alias="m_dead">gfx/ppl/bl_m_dead.png</file>
+        <file alias="m">gfx/ppl/bl_m_live.png</file>
+        <file alias="f">gfx/ppl/bl_f_live.png</file>
+    </qresource>
+    <qresource prefix="/people/gray">
+        <file alias="f">gfx/ppl/gray_f_live.png</file>
+        <file alias="m_dead">gfx/ppl/gray_m_dead.png</file>
+        <file alias="m">gfx/ppl/gray_m_live.png</file>
+    </qresource>
+    <qresource prefix="/map">
+        <file alias="door">gfx/drzwi.bmp</file>
+        <file alias="force_field">gfx/pole_silowe.bmp</file>
+        <file alias="wall">gfx/sciana.bmp</file>
+        <file alias="back">gfx/tlo.bmp</file>
+        <file alias="sky">gfx/niebo.bmp</file>
+        <file alias="pc">gfx/pc.png</file>
+        <file alias="big_pc">gfx/big_pc.png</file>
+    </qresource>
+    <qresource prefix="/map/pc_states">
+        <file alias="bsod">gfx/bsod_pc.png</file>
+        <file alias="apple">gfx/pc_apple.png</file>
+        <file alias="av_01">gfx/pc_av1.png</file>
+        <file alias="av_02">gfx/pc_av2.png</file>
+        <file alias="broken_03">gfx/pc_broken.png</file>
+        <file alias="fixed_01">gfx/pc_fixed1.png</file>
+        <file alias="fixed_02">gfx/pc_fixed2.png</file>
+        <file alias="working_03">gfx/pc_fixed3.png</file>
+        <file alias="broken_02">gfx/pc_broken_02.png</file>
+        <file alias="broken_01">gfx/pc_broken01.png</file>
+        <file alias="net5">gfx/net5_pc.png</file>
+        <file alias="big_av_01">gfx/big_av01.png</file>
+        <file alias="big_av_02">gfx/big_av02.png</file>
+        <file alias="big_corrupted">gfx/big_corrupted.png</file>
+    </qresource>
+</RCC>

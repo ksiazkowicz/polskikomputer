@@ -1,0 +1,544 @@
+[Story]
+count=9
+0=beginning_scene
+1=boss
+2=net0_1
+3=net0_2
+4=net5_acc
+5=net5_acc_2
+6=net5_terminal
+7=net0_separation
+8=net5_ending
+
+[beginning_scene]
+position_x=8
+position_y=10
+count=2
+0="TERMINAL: [Informacja. Wykryto powazna awarie w sieci komputerowej. Zrodlo: nieznane.]"
+1="[O! W koncu cos sie dzieje! Umarlbym tu z nudow.]"
+
+[boss]
+position_x=51
+position_y=24
+count=4
+0_script="player.isCharacterLocked=true"
+0="[Czesc! Slyszalem, ze czegos ode mnie chcesz!]"
+1="SZEFOWA: [Nic nie dziala, atakuja nas hakerzy, wszystko sie wyraznie sypie. Nie mowiac juz o Net0, jest widoczny z zewnatrz.] *wsciekla*"
+2="[Oho, ciekawie...]"
+3="SZEFOWA: [NIE CIEKAWIUJ MI TU TYLKO IDZ NAPRAWIAC! Rozliczymy sie pozniej!]"
+3_script="player.isCharacterLocked=false"
+
+[net0_1]
+position_x=51
+position_y=42
+count=6
+0_script="player.isCharacterLocked=true"
+0="[Potrzebuje uzyskac dostep do serwera Net0]"
+1="Martyna W.: [Dostep do Net0 wymaga upowaznienia. Spytam szefowej, czy je masz.]"
+2="Martyna W.: [O, masz pozwolenie. Drukuje przepustke.]"
+3="*pod nosem* [ech, biurokracja...]"
+4="[Nic, nic. Nie martw sie, zajme sie tym.]"
+5="Martyna W.: [Oto Twoja przepustka.]"
+5_script="player.isCharacterLocked=false; game.update_mapchar(54,45,0); game.update_mapchar(54,44,0); game.update_mapchar(54,43,0);"
+
+[net0_2]
+position_x=56
+position_y=42
+count=2
+0="Net0: [-> SEPARACJE NIEUDANA. NET5 NIE ODPOWIADA! <-]"
+0_script="player.isCharacterLocked=true"
+1="[A moglo byc tak pieknie.]"
+1_script="player.isCharacterLocked=false"
+
+[net5_acc]
+position_x=24
+position_y=42
+count=1
+0="[O, zamkniete. No coz, a chcialem zrobic to normalnie. Czas cos zlamac.]")
+
+[net5_acc_2]
+position_x=19
+position_y=37
+count=6
+0="[O, a teraz sie otworzylo.]"
+0_script="game.update_mapchar(18,38,0); game.update_mapchar(18,39,0); game.update_mapchar(18,40,0); player.isCharacterLocked=true"
+1="Ola C.: [KTO POZWOLIL CI TU WEJSC?!]"
+2="[No w sumie ja, a co? Nie wolno? Jestem adminem, gdyby nie ja, to nie byloby nawet dokad wchodzic!]"
+3="Ola C.: [No dobra, czego pan chcesz...?]"
+4="[Cos Wam sie chyba zawiesilo, nie moge odizolowac glownego serwera.]"
+5="[Dzieki, laskawczyni...]"
+5_script="player.isCharacterLocked=false"
+
+[net0_separation]
+position_x=56
+position_y=42
+count=2
+0="Net0: [SEPARACJA UDANA!]"
+0_script="player.isCharacterLocked=true;"
+1="[Nareszcie jakis sukces!]"
+1_script="player.isCharacterLocked=false;"
+
+[net5_terminal]
+position_x=12
+position_y=34
+count=6
+0="[Okeej, niech sie dzieje wola nieba, czy cos. Wysylam sygnal.]"
+0_script="player.isCharacterLocked=true"
+1="TERMINAL: *pip pip pip pippirippip*"
+2="[Ooo, zaklocaja mnie. Smiesznie.]"
+3="Ola C.: [Ale kto...?]"
+4="[Ktos z Net5, czekaj. Mam adres IP... No dobra, juz nikt.]"
+5="TERMINAL: [Nawiazano poprawnie kontakt z Net0]"
+5_script="player.isCharacterLocked=false"
+
+[net5_ending]
+position_x=29
+position_y=42
+count=8
+0="???: [O, czesc, co tam slychac? Akurat wykradam dane z sieci Waszej firmy.]"
+0_script="player.isCharacterLocked=true"
+1="[Oho, oho, czyzbym znalazl osobe odpowiadajaca za awarie?]"
+2="???: [Nie no, co zlego to nie ja, no wiesz przecie...]"
+3="[Koniec tej blazenady. No bo powaznie, PRZECIE?! Odsun sie od terminala!]"
+4="???: [A co mi niby zrobisz...?]"
+5="[Odsune. Sila.]"
+6="???: *bzyyyyt* [No chyba tak jakby juz nie.] *smiech*"
+6_script="player.gfx='player/brown/m_dead'"
+7=""
+7_script="game.showEndingDialog()"
+
+[an3_1]
+count=1
+label="[ROZMAWIAJ]"
+0="Sebastian D.: [Ej, mowilem Ci o tym nowym buildzie Longhorna, ktory niedawno wyciekl? Niewazne, powiem Ci pozniej.]"
+
+[an3_2]
+count=1
+label="[ROZMAWIAJ]"
+0="Katarzyna Z.: [Moglbys przekazac wiadomosc mojemu koledze z An-2? Albo niewazne, przypomnialam sobie jego IP.]"
+
+[sn3_1]
+count=2
+label="[ROZMAWIAJ]"
+0="Lech N.: [Czy ma pan chwile, by porozmawiac o Bogu?]"
+1="[Nie za bardzo... Wlasciwie to w ogole, niewazne, milego dnia.]"
+
+[sn3_2]
+count=2
+label="[ROZMAWIAJ]"
+0="[O, czesc, co tam slychac?]"
+1="Adam K.: [A nic, wszystko po staremu. Pracuj dalej.]"
+
+[sn3_3]
+count=2
+label="[ROZMAWIAJ]"
+0="Stefan W.: [Naprawde, nie mam w tej chwili czasu, jestem zbyt zajety obijaniem sie!"
+1="[Ach... okej...]"
+
+[sn3_4]
+count=2
+label="[ROZMAWIAJ]"
+0="Anna R.: [Uwielbiam chleb krojony! <3]"
+1="[Prawda, ze jest swietny? Nie trzeba go kroic!]"
+
+[som_1]
+count=2
+label="[ROZMAWIAJ]"
+0="Ajd?? @.: {/*tu cos bedzie w sobote wieczorem*/ this->close();"
+1="[Niewazne, zapomnialem to zaimplementowac...]"
+
+[som_2]
+count=2
+label="[ROZMAWIAJ]"
+0="Hanna E.: [Jak tam idzie? Wiadomo cos?]"
+1="[No cos tak... Ale nie chce mi sie opowiadac, niewazne, wroce do pracy.]"
+
+[som_3]
+count=2
+label="[ROZMAWIAJ]"
+0="Zenek Z.: [KTO WYGRA MECZ?! NO KTO?!]"
+1="[Eee... Polska?] *bez entuzjazmu* [Polska, Polska, Polska.]"
+
+[som_4]
+count=2
+label="[ROZMAWIAJ]"
+0="Agnieszka O.: [EEEEJ, TU JEST PAJAK!] *przerazenie*"
+1="[Witamy w sieci web...]"
+
+[som_5]
+count=2
+label="[ROZMAWIAJ]"
+0="Michal G.: [Chcialbym zauwazyc, iz siec w budynku nadal nie dziala poprawnie. Ruszze sie, nie jest moim obowiazkiem pamietanie wszystkich adresow IP!]"
+1="[Gdy Ty nic nie robisz, ja wlasnie ciezko pracuje, wiec sie zamknij...]"
+
+[som_6]
+count=2
+label="[ROZMAWIAJ]"
+0="Elzbieta H.: [mielismy wydac na rynek nowa generacje komputerow... Boje sie, co z tego wyjdzie...]"
+1="[Mam nadzieje, ze nie trzeba bedzie tego anulowac.]"
+
+[som_7]
+count=2
+label="[ROZMAWIAJ]"
+0="Urszula L.: [Slyszales o tych nowych palmtopach z Windows CE 2.0? Chcialabym dostac taki do zabawy!]"
+1="[Moze kiedys dostaniesz...?]"
+
+[som_8]
+count=2
+label="[ROZMAWIAJ]"
+0="Patryk S. [A moglem juz dawno byc w domu...]"
+1="*zlowrogi smiech* [ALE NIE BEDZIESZ!]"
+
+[sn1_redhead]
+count=6
+label="[ROZMAWIAJ]"
+0="[Co tu sie stalo? Skad te trupy?]"
+1="Lisa E.: [Te... komputery... Zaczely kopac pradem... Boje sie...] *placz*"
+2="[Cos mi to przypomina... ciekawe... normalnie jak sala 300...]"
+3="Lisa E.: [Hm?] *przez lzy*"
+4="[Nic, nic. Nie martw sie, zajme sie tym.]"
+5="Lisa E.: [Dziekuje...]"
+
+[an2]
+count=2
+label="[ROZMAWIAJ]"
+0="[O, moze Ty wiesz, co tu sie dzieje!]"
+1="Krzysztof W.: [Nie. Ja nie mam takich praw dostepu, zajrzyj do SN-2]"
+
+[sn2_1]
+count=2
+label="[ROZMAWIAJ]"
+0="[O, bo widzisz... jest taka sprawa...]"
+1="Karolina S.: [Awaria spowodowala oddzielenie sie Net2, nie mozemy sie z nimi skontaktowac. Wiecej nie wiem, przystojniaku.]"
+
+[sn2_2]
+count=2
+label="[ROZMAWIAJ]"
+0="Grzegorz F.: [O, czesc panie adminie! Patrz pan, ten szrot raczyl mi tu sie zepsuc! Ja panu mowilem, pan wym...]"
+1="[Nie mam teraz na to czasu.]"
+
+[sn2_3]
+count=2
+label="[ROZMAWIAJ]"
+0="[O, kochana, Ty na pewno masz jakas konstruktywna uwage!]"
+1="Marta B.: [Wiekszosc struktur jest w rozsypce, serwery nie dzialaja. To cud, ze mamy jakiekolwiek polaczenie miedzy komputerami]"
+
+[sn2_4]
+count=2
+label="[ROZMAWIAJ]"
+0="[Powiesz mi cos ciekawego?]"
+1="Cezary D.: [Atak zostal wykonany z zewnatrz, prawdopodobnie mamy wlam, nie wiem tylko, skad.]"
+
+[sn2_5]
+count=2
+label="[ROZMAWIAJ]"
+0="A Ty?"
+1="Natalia K.: [Wpadnij do szefowej w okolicach An-3, probowala sie z Toba skontaktowac, ale nie pamieta Twojego IP]"
+
+[an3]
+count=2
+label="[ROZMAWIAJ]"
+0="[O, programista.]"
+1="Tomasz C.: [O, admin. Daruj sobie, nie mamy do niczego dostepu.]"
+
+[net5_1]
+count=2
+label="[ROZMAWIAJ]"
+0="Jadwiga P.: [Masz moze kawe?]"
+1="[Niestety, zabraklo w calym budynku... Umieram...]"
+
+[net5_2]
+count=3
+label="[ROZMAWIAJ]"
+0="[Powiesz mi cos ciekawego?]"
+1="Beata M.: [Czy wiesz, ze jedzenie kanapki moze drastycznie zmniejszyc jej objetosc?]"
+3="[Przydatna uwaga...]"
+
+[net5_3]
+count=2
+label="[ROZMAWIAJ]"
+0="Mariusz L.: [Nawet nie sadzilem, ze ktos sie do mnie odezwie...]"
+1="[NIESPODZIANKA! Aha, czyli nie masz nic ciekawego do powiedzenia. No nic, niewazne]"
+
+[net5_4]
+count=2
+label="[ROZMAWIAJ]"
+0="Patrycja D.: [Nawet nie probuj mnie pytac o nic, ja nie wiem, ja tu tylko sprzatam]"
+1="[No dobrze, dobrze, juz sobie ide.]"
+
+[preNet2]
+count=1
+label="[ROZMAWIAJ]"
+0="Lucyna U.: [Naprawiaj, naprawiaj, nie przeszkadzaj sobie ^^]"
+
+[dead_body_interaction]
+do_not_track=1
+count=1
+label="[ZBADAJ]"
+0="[Ktos tu zaliczyl zgona... he he...]"
+0_script="game.rage(5);"
+
+[7x2]
+gfx=people/red/f
+group=sn1_redhead
+
+[21x12]
+gfx=people/blonde/m
+group=an2
+
+[28x12]
+gfx=people/brown/f
+
+[2x19]
+gfx=people/blonde/f
+group=sn2_5
+
+[6x19]
+gfx=people/blonde/m
+group=sn2_4
+
+[10x19]
+gfx=people/red/f
+group=sn2_3
+
+[18x19]
+gfx=people/gray/m
+group=sn2_2
+
+[27x19]
+gfx=people/brown/f
+group=sn2_1
+
+[50x14]
+gfx=people/brown/f
+group=preNet2
+
+[61x26]
+gfx=people/red/m
+group=an3_1
+
+[56x21]
+gfx=people/gray/m
+group=an3
+
+[61x21]
+gfx=people/red/f
+group=an3_2
+
+[51x44]
+gfx=people/brown/f
+
+[29x29]
+gfx=people/red/m
+group=sn3_1
+
+[29x35]
+gfx=people/red/m
+group=sn3_2
+
+[37x35]
+gfx=people/blonde/m
+group=sn3_3
+
+[32x39]
+gfx=people/red/f
+group=sn3_4
+
+[30x44]
+gfx=people/gray/f
+
+[37x44]
+gfx=people/brown/f
+
+[8x46]
+gfx=people/blonde/m
+
+[11x39]
+gfx=people/brown/f
+group=net5_2
+
+[14x39]
+gfx=people/gray/f
+group=net5_1
+
+[14x36]
+gfx=people/blonde/f
+group=net5_4
+
+[11x36]
+gfx=people/red/f
+
+[5x39]
+gfx=people/red/m
+group=net5_3
+
+[51x26]
+gfx=people/brown/f_boss
+
+[12x30]
+gfx=people/blonde/f
+group=som_1
+
+[8x30]
+gfx=people/brown/f
+group=som_2
+
+[5x30]
+gfx=people/gray/m
+group=som_3
+
+[2x30]
+gfx=people/red/f
+group=som_4
+
+[14x26]
+gfx=people/blonde/m
+group=som_5
+
+[10x26]
+gfx=people/red/f
+group=som_6
+
+[6x26]
+gfx=people/brown/f
+group=som_7
+
+[2x26]
+gfx=people/red/m
+group=som_8
+
+[15x30]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[33x44]
+gfx=people/blonde/f_dead
+group=dead_body_interaction
+
+[38x39]
+gfx=people/blonde/f_dead
+group=dead_body_interaction
+
+[30x39]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[33x35]
+gfx=people/brown/m_dead
+group=dead_body_interaction
+
+[31x29]
+gfx=people/blonde/f_dead
+group=dead_body_interaction
+
+[38x29]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[4x2]
+gfx=people/blonde/m_dead
+group=dead_body_interaction
+
+[3x7]
+gfx=people/red/m_dead
+group=dead_body_interaction
+
+[12x2]
+gfx=people/brown/f_dead
+group=dead_body_interaction
+
+[16x2]
+gfx=people/blonde/f_dead
+group=dead_body_interaction
+
+[2x12]
+gfx=people/brown/f_dead
+group=dead_body_interaction
+
+[29x3]
+gfx=people/blonde/m_dead
+group=dead_body_interaction
+
+[8x7]
+gfx=people/brown/m_dead
+group=dead_body_interaction
+
+[13x7]
+gfx=people/brown/f_dead
+group=dead_body_interaction
+
+[12x12]
+gfx=people/blonde/f_dead
+group=dead_body_interaction
+
+[17x12]
+gfx=people/red/f_dead
+group=dead_body_interaction
+
+[26x9]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[35x21]
+gfx=people/blonde/m_dead
+group=dead_body_interaction
+
+[8x19]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[15x19]
+gfx=people/brown/m_dead
+group=dead_body_interaction
+
+[22x19]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[25x19]
+gfx=people/brown/m_dead
+group=dead_body_interaction
+
+[47x14]
+gfx=people/gray/m_dead
+group=dead_body_interaction
+
+[54x14]
+gfx=people/red/m_dead
+group=dead_body_interaction
+
+[57x26]
+gfx=people/brown/f_dead
+group=dead_body_interaction
+
+[58x31]
+gfx=people/brown/f_dead
+group=dead_body_interaction
+
+[61x31]
+gfx=people/red/m_dead
+group=dead_body_interaction
+
+[60x44]
+gfx=people/red/f
+
+[55x2]
+gfx=people/blonde/m
+
+[51x2]
+gfx=people/brown/f
+
+[48x2]
+gfx=people/red/m
+
+[55x6]
+gfx=people/red/f
+
+[48x10]
+gfx=people/brown/f
+
+[53x10]
+gfx=people/gray/m
+
+[0x0]
+gfx=ui/labels

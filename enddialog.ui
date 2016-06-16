@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EndDialog</class>
+ <widget class="QDialog" name="EndDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Terminal</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #fff;</string>
+     </property>
+     <property name="text">
+      <string>ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ POLSKI KOMPUTER ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ» 
+ş ÚÄÄ PODSUMOWANIE ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄż ş˛
+ş ł                                                          ł ş˛
+ş ł  Zdobyte punkty:                                      0  ł ş˛
+ş ł  Naprawione komputery:                                0  ł ş˛
+ş ł  Poboczne zadania:                                    0  ł ş˛
+ş ł  Punkty nienawisci:                                   0  ł ş˛
+ş ł  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                       ł ş˛
+ş ł  Osiagniecia:                                            ł ş˛
+ş ł     - Szlachta nie pracuje                               ł ş˛
+ş ł     Nie napraw ani jednego komputera.                    ł ş˛
+ş ł     - Aspolecznosc                                       ł ş˛
+ş ł     Nie porozmawiaj z ani jedna postacia                 ł ş˛
+ş ł     - Moment zen                                         ł ş˛
+ş ł     Nie zdobadz ani jednego punktu nienawisci            ł ş˛
+ş ł                                                          ł ş˛
+ş ł  u bro tanks for playin. im sad ur sofware enginer so u  ł ş˛
+ş ł  can made bro                                            ł ş˛
+ş ŔÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄŮ ş˛
+ş Informatyka Stosowana i Systemy Pomiarowe 2016. Polecam.     ş˛
+ČÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍĽ˛
+˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
