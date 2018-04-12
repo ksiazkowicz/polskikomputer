@@ -25,11 +25,11 @@ public:
     int    score = 0;
 
     int    jumpStrength;
-    bool   isJumping;
-    bool   isFalling;
+    bool   isJumping = false;
+    bool   isFalling = false;
 
     bool   isFixInProgress;
-    bool   isCharacterLocked;
+    bool   isCharacterLocked = false;
     int    fixEffect;
 
     QString gfx;

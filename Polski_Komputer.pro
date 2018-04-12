@@ -7,6 +7,7 @@
 QT       += core gui script
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+RC_ICONS = gfx/icon.ico
 
 TARGET = Polski_Komputer
 TEMPLATE = app
@@ -39,3 +40,5 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     game_assets.qrc
+
+DISTFILES +=

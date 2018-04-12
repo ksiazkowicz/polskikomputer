@@ -278,10 +278,6 @@ void game::openNextDoor() {
             }
         break;
     }
-
-    // force refresh cache
-    GameCanvas* parent = (GameCanvas*)this->parent();
-    parent->reset_cache();
 }
 
 void game::handle_fixed() {
@@ -337,12 +333,7 @@ void game::doScore() {
 }
 
 void game::update_mapchar(int x, int y, char character) {
-    qDebug()<< map[x][y];
     map[x][y] = character;
-
-    // force refresh cache
-    GameCanvas* parent = (GameCanvas*)this->parent();
-    parent->reset_cache();
 }
 
 void game::showEndingDialog() {

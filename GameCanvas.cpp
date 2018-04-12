@@ -201,7 +201,7 @@ void GameCanvas::paintEvent(QPaintEvent *)
 
     if (!this->is_cache_available) {
         this->is_cache_available = true;
-        this->repaint();
+        //this->repaint();
     }
 }
 
@@ -221,12 +221,12 @@ void GameCanvas::timerEvent(QTimerEvent *)
 {
     // game logic
 
-    bool need_to_repaint = false;
+    bool need_to_repaint = !this->is_cache_available;
 
     // disable movement when jumping
-    if (!app->player.isJumping && !app->player.isFalling && !app->player.isCharacterLocked) {
-        // support key presses
-        if (keys[Qt::Key_Up]) {
+    if (keys[Qt::Key_Up])
+    {
+        if (!app->player.isJumping && !app->player.isFalling && !app->player.isCharacterLocked) {
             jump_speed = movement_speed*(max_jump-2);
             jump_state = 0;
             app->player.isJumping = true;
@@ -301,9 +301,7 @@ void GameCanvas::add_person(QPoint pos, QString gfx) {
     people.append(person);
 
     // reset cache
-    this->is_cache_available = false;
-
-    this->repaint();
+    this->reset_cache();
 }
 
 void GameCanvas::remove_person(QPoint pos) {
@@ -313,9 +311,7 @@ void GameCanvas::remove_person(QPoint pos) {
     }
 
     // reset cache
-    this->is_cache_available = false;
-
-    this->repaint();
+    this->reset_cache();
 }
 
 void GameCanvas::load_assets()
@@ -357,8 +353,6 @@ void GameCanvas::load_assets()
          // load asset from qrc
          assets["pc_"+types.at(i)] = load_asset("://map/pc_states/"+types.at(i));
     }
-
-    qDebug() << "Loaded" << assets.count() << "assets:"<< assets.keys();
 }
 
 void GameCanvas::reset_cache() {
@@ -366,5 +360,5 @@ void GameCanvas::reset_cache() {
     this->is_cache_available = false;
 
     // force repaint
-    this->repaint();
+    // this->repaint();
 }
